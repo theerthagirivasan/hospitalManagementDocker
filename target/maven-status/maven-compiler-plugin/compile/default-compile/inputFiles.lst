@@ -12,9 +12,11 @@ C:\theerthagirivasan\projects\hospitalManagement\src\main\java\com\hospital\mana
 C:\theerthagirivasan\projects\hospitalManagement\src\main\java\com\hospital\management\services\AggregationService.java
 C:\theerthagirivasan\projects\hospitalManagement\src\main\java\com\hospital\management\security\UserDetailsServiceImpl.java
 C:\theerthagirivasan\projects\hospitalManagement\src\main\java\com\hospital\management\models\Appointment.java
+C:\theerthagirivasan\projects\hospitalManagement\src\main\java\com\hospital\management\exception\GlobalException.java
 C:\theerthagirivasan\projects\hospitalManagement\src\main\java\com\hospital\management\security\WebSecurityConfig.java
 C:\theerthagirivasan\projects\hospitalManagement\src\main\java\com\hospital\management\models\User.java
 C:\theerthagirivasan\projects\hospitalManagement\src\main\java\com\hospital\management\dto\AppointmentsPerDoctorDTO.java
+C:\theerthagirivasan\projects\hospitalManagement\src\main\java\com\hospital\management\exception\ErrorResponse.java
 C:\theerthagirivasan\projects\hospitalManagement\src\main\java\com\hospital\management\models\TimeSlot.java
 C:\theerthagirivasan\projects\hospitalManagement\src\main\java\com\hospital\management\security\AuthTokenFilter.java
 C:\theerthagirivasan\projects\hospitalManagement\src\main\java\com\hospital\management\controllers\ReportController.java

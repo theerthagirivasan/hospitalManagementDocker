@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react';
+import { useState, useEffect } from 'react';
 import api from '../api/axios';
 import { AuthContext } from '../context/AuthContext';
 
@@ -7,7 +7,7 @@ const DoctorDashboard = () => {
   const [loading, setLoading] = useState(true);
   const [actionError, setActionError] = useState('');
   
-  const { user } = useContext(AuthContext);
+  // const { user } = useContext(AuthContext);
 
   const fetchAppointments = async () => {
     try {

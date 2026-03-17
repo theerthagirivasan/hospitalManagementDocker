@@ -26,9 +26,9 @@ public class User {
     
     private Role role;
     
-    // Doctor specific fields
+
     private String specialization;
     
-    // Only used if role == DOCTOR
+
     private List<TimeSlot> availableSlots;
 }

@@ -17,14 +17,10 @@ public class AppointmentService {
     private AppointmentRepository appointmentRepository;
 
     public boolean hasOverlap(String doctorId, String patientId, Appointment newAppointment) {
-        // Business Rules:
-        // - Cannot book overlapping time slots for the same doctor
-        // - Patient cannot book multiple appointments at the same time
         
         List<Appointment> doctorAppointments = appointmentRepository.findByDoctorId(doctorId);
         List<Appointment> patientAppointments = appointmentRepository.findByPatientId(patientId);
 
-        // Check Doctor Overlap
         boolean doctorOverlap = doctorAppointments.stream()
                 .filter(a -> a.getStatus() != AppointmentStatus.CANCELLED)
                 .filter(a -> a.getAppointmentDate().equals(newAppointment.getAppointmentDate()))
@@ -32,7 +28,6 @@ public class AppointmentService {
                 
         if (doctorOverlap) return true;
 
-        // Check Patient Overlap
         boolean patientOverlap = patientAppointments.stream()
                 .filter(a -> a.getStatus() != AppointmentStatus.CANCELLED)
                 .filter(a -> a.getAppointmentDate().equals(newAppointment.getAppointmentDate()))

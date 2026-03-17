@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://hospitalmanagementdocker.onrender.com/api', // Spring Boot default port
+  baseURL: 'https://hospitalmanagementdocker.onrender.com/api',
 });
 
 api.interceptors.request.use((config) => {
